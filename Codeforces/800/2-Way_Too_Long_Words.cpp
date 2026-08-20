@@ -12,3 +12,27 @@ int main() {
     }
     return 0;
 }
+/* BEST SOLUTION RECOMMENDED BY AI
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        string s;
+        cin >> s;
+
+        if (s.size() <= 10)
+            cout << s << '\n';
+        else
+            cout << s.front() << s.size() - 2 << s.back() << '\n';
+    }
+}
+    Here:
+    - s.back() → last character
+    - s.size() → length of string
+    - '\n' → generally preferred over endl in CP because it doesn't force a flush.
+    - s.front() → first character
+*/
